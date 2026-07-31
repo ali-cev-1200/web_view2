@@ -1,4 +1,4 @@
-name: iOS Build Test
+name: Flutter iOS Build
 
 on:
   push:
@@ -6,12 +6,30 @@ on:
       - main
 
 jobs:
-  test:
+  build_ios:
+
     runs-on: macos-latest
 
     steps:
-      - name: Checkout
+
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Show files
-        run: ls
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+
+      - name: Flutter version
+        run: flutter --version
+
+
+      - name: Get dependencies
+        run: flutter pub get
+
+
+      - name: Build iOS
+        run: flutter build ios --release --no-codesign
