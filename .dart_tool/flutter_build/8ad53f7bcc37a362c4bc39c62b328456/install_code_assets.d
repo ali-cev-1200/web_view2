@@ -1,0 +1,1 @@
+ D:\\pro\\flutter\\Rozhbinn\\.dart_tool\\flutter_build\\8ad53f7bcc37a362c4bc39c62b328456\\native_assets.json: 
