@@ -58,8 +58,8 @@ class _RozhbinAppState extends State<RozhbinApp> with TickerProviderStateMixin {
 
   // تنظیمات رنگ و لینک
   final Color orangeColor = const Color(0xFFF39534);
-  final String allowedDomain = "rozhbin.ir";
-  final String initialUrl = "https://rozhbin.ir";
+  final String allowedDomain = "amingholipour.ir";
+  final String initialUrl = "https://amingholipour.ir/";
 
   @override
   void initState() {
@@ -310,7 +310,7 @@ class _RozhbinAppState extends State<RozhbinApp> with TickerProviderStateMixin {
                 const SizedBox(height: 50),
                 // متن
                 const Text(
-                  "آکادمی روژبین",
+                  "آکادمی امین",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 32,
